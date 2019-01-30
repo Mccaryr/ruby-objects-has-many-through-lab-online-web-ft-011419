@@ -22,7 +22,7 @@ class Patient
 
   def doctors
   appointments.map do |appointment|
-    appointment.doctor
+    appointment.doctor #was getting date instead of doctor when def new_appointment arguments were reversed.
   end
   end
 end
